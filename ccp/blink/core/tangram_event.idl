@@ -1,0 +1,19 @@
+[
+  Exposed = Window
+] interface TangramEvent {
+  attribute DOMString eventId;
+  attribute DOMString param1;
+  attribute DOMString param2;
+  attribute DOMString param3;
+  attribute DOMString param4;
+  attribute DOMString param5;
+  attribute long long handleSource;
+  attribute long long handleTarget;
+  attribute TangramXobj xobj;
+  readonly attribute DOMString name;
+  readonly attribute DOMString objtype;
+  readonly attribute long long hwnd;
+  readonly attribute TangramNode node;
+  readonly attribute TangramWinform form;
+  readonly attribute TangramWindow window;
+};

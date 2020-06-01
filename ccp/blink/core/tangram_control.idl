@@ -1,0 +1,25 @@
+
+[
+	Exposed = Window
+] interface TangramControl : EventTarget {
+
+	// Message API
+	void sendMessage([DefaultValue = Undefined] optional TangramXobj msg,
+		[DefaultValue = Undefined] optional ApplicationCallback callback);
+
+	// Control Events Binding:
+	void BindCtrlEvents(DOMString strEvents);
+	void addEventListener(DOMString eventName, ApplicationCallback callback);
+	void removeEventListener(DOMString eventName);
+
+	readonly attribute long long handle;
+	readonly attribute DOMString name;
+	readonly attribute DOMString type;
+	readonly attribute TangramXobj xobj;
+	readonly attribute TangramNode parentNode;
+	readonly attribute TangramWinform parentForm;
+	readonly attribute TangramControl parentControl;
+	
+	// Event handler attributes
+	attribute EventHandler onMessageReceived;
+};
