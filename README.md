@@ -38,3 +38,11 @@ Then use the following command to get the source code of the specified version, 
 gclient sync --revision src@{rev} --with_tags --with_branch_heads
 ```
 
+After checking out the source code, copy the files in the `chromium_patches\{rev}` directory to the src directory.  
+Then copy the script file in the `bin` directory to the same directory as the src directory. Then open the **Command Prompt** window, enter the `src` directory and execute:
+
+```
+C:\src\chromium\src>..\Generate_Build.bat
+```
+
+This command will install a set of Build directories under the `out` directory. Next, build on the official documentation.
