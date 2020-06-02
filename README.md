@@ -1,6 +1,6 @@
 # Chromium Component Package
 
-Chromium Component Package (CCP for short) is a brand new Chromium redistribution package. Unlike traditional Chromium-based browsers, CCP is dedicated to the Open Web Runtime project. By converting the chrome.exe project into chrome_rt.dll, the Chromium browser can be directly loaded by general applications.
+Chromium Component Package (CCP for short) is a brand new Chromium redistribution package. Unlike traditional Chromium-based browsers, CCP is dedicated to the Open Web Runtime project. By converting the `chrome.exe` project into `chrome_rt.dll`, the Chromium browser can be directly loaded by general applications.
 
 ## Features
 In addition to not being able to run directly as an executable program, CCP retains all the functionality of the Chromium project. In addition, CCP also provides the following mechanisms:
